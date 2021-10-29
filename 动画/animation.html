@@ -1,0 +1,71 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>动画</title>
+	<style type="text/css">
+		html,body,page{
+			margin: 0;
+			height: 100%;
+			width: 100%;
+			
+		}
+		page{
+			position: absolute;
+			font-size: 200px;
+			padding-top: 300px;
+			padding-left: 100px
+		}
+		#c{
+			background-color: lightgreen;
+			animation: c 10s infinite;
+		}
+		#x{
+			background-color: green;
+			animation: x 10s infinite;
+		}
+		#q{
+			background-color: yellow;
+			animation: q 10s infinite;
+		}
+		#d{
+			color: white;
+			background-color: black;
+			animation: d 10s infinite;
+		}
+		@keyframes c{
+			0%{opacity: 0}
+			20%{opacity: 100}
+			40%{opacity: 0}
+			100%{opacity: 0}
+		}
+		@keyframes x{
+			0%{opacity: 0}
+			20%{opacity: 0}
+			40%{opacity: 100}
+			60%{opacity: 0}
+			100%{opacity: 0}
+		}
+		@keyframes q{
+			0%{opacity: 0}
+			40%{opacity: 0}
+			60%{opacity: 100}
+			80%{opacity: 0}
+			100%{opacity: 0}
+		}
+		@keyframes d{
+			0%{opacity: 0}
+			60%{opacity: 0}
+			80%{opacity: 100}
+			100%{opacity: 0}
+		}
+	</style>
+</head>
+
+<body>
+	<page id="c">春</page>
+	<page id="x">夏</page>
+	<page id="q">秋</page>
+	<page id="d">冬</page>
+</body>
+</html>
