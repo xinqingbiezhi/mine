@@ -39,6 +39,24 @@
 			color: orangered
 		}
 		#title{font-weight: 500}
+		@keyframes myfirst{
+			0% {opacity: 0}
+			50% {opacity: 100}
+			75% {opacity: 0}
+			100% {opacity: 0}
+		}
+		@keyframes mysecond{
+			0% {opacity: 0}
+			50% {opacity: 0}
+			75% {opacity: 100}
+			100% {opacity: 100}
+		}
+		h1{
+			animation: myfirst 4s infinite;
+		}
+		p,h2{
+			animation: mysecond 4s infinite;
+		}
 	</style>
 	<h1 id="title">古诗两首</h1>
 	<h2 class="shi">《惜花》<span class="shiren">白居易</span></h2>
