@@ -1,0 +1,59 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>骰子猜大小</title>
+	<style type="text/css">
+		p{
+			font-size: 100px;
+			color: orangered;
+			text-align: center;
+		}
+	</style>
+</head>
+
+<body>
+	<p id="magic"></p>
+</body>
+</html>
+<script>
+		var bingo=false;
+		var str;
+		var a=Math.random();
+		a=Math.floor(a*6)+1;
+		console.info(a);
+		function guess(){
+			if(bingo){
+				return;
+			}
+			var guess=prompt("你猜骰子是多少？");
+			var diff=Math.abs(a-guess);
+			if(!Number.isInteger(guess/1)||guess<1||guess>6){
+				document.getElementById("magic").innerHTML ="您的输入有误";
+				return;
+			}
+			if(guess==a){
+				str ="猜中了";
+				bingo=true;
+			}
+			else if(guess>a){
+				if(diff>1){
+					str ="猜太大了";
+				}
+				else{
+					str ="猜的有点大";
+				}
+			}
+			else{
+				if(diff>1){
+					str ="猜太小了";
+				}
+				else{
+					str ="猜的有点小";
+				}
+			}
+			document.getElementById("magic").innerHTML = str;
+		}
+		guess();
+		guess();
+	</script>

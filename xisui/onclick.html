@@ -1,0 +1,39 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>我的字典里面没有3</title>
+	<style type="text/css">
+		body,html{
+			width: 100%;
+			height: 100%;
+			color: blue;
+			text-align: center
+		}
+		p{
+			font-size: 200px;
+			margin: 150px;
+		}
+	</style>
+</head>
+
+<body>
+	<audio id="bgm" src="wav/beiai.wav" autoplay preload="auto" controls></audio>
+	<p onclick="oo()" id="magic">onclick me</p>
+</body>
+</html>
+<script>
+	var num=1;
+	function oo(){
+		if(num%10==3){
+			document.getElementById("magic").innerHTML = "NONE";
+		}
+		else if(Math.floor(num/10)%10==3){
+			document.getElementById("magic").innerHTML = "NONE";
+		}
+		else{
+		document.getElementById("magic").innerHTML = num;
+		}
+		num +=1;
+	}
+</script>

@@ -1,0 +1,176 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>手机动画</title>
+	<style type="text/css">
+		#bgm{
+			z-index: 1;
+			position: absolute;
+			margin-left: 15%;
+		}
+		html,body,page{
+			margin: 0;
+			height: 100%;
+			width: 100%;
+			background-size: 100% 100%;
+		}
+		page{
+			position: absolute;
+			font-size: 160px;
+			text-align: center;
+			padding-top: 30%;
+		}
+		#c{
+			background-image: url(image/spring.jpg);
+			animation: c 10s infinite;
+		}
+		#x{
+			background-image: url(image/summer.jpg);
+			animation: x 10s infinite;
+		}
+		#q{
+			background-image: url(image/autumn.jpg);
+			animation: q 10s infinite;
+		}
+		#d{
+			background-image: url(image/winter.jpg);
+			animation: d 10s infinite;
+		}
+		#w{
+			display: block;
+			font-size: 40px;
+			animation: w 10s infinite;
+		}
+		#b{
+			display: block;
+			font-size: 40px;
+			animation: b 10s infinite;
+		}
+		#f{
+			display: block;
+			font-size: 40px;
+			animation: f 10s infinite;
+		}
+		#z{
+			display: block;
+			font-size: 40px;
+			animation: z 10s infinite;
+		}
+		@keyframes c{
+			0%{opacity: 0}
+			20%{opacity: 100}
+			40%{opacity: 0}
+			100%{opacity: 0}
+		}
+		@keyframes x{
+			0%{opacity: 0}
+			20%{opacity: 0}
+			40%{opacity: 100}
+			60%{opacity: 0}
+			100%{opacity: 0}
+		}
+		@keyframes q{
+			0%{opacity: 0}
+			40%{opacity: 0}
+			60%{opacity: 100}
+			80%{opacity: 0}
+			100%{opacity: 0}
+		}
+		@keyframes d{
+			0%{opacity: 0}
+			60%{opacity: 0}
+			80%{opacity: 100}
+			100%{opacity: 0}
+		}
+		@keyframes w{
+			0%{opacity: 0}
+			10%{opacity: 0}
+			20%{opacity: 100}
+			40%{opacity: 0}
+			100%{opacity: 0}
+		}
+		@keyframes b{
+			0%{opacity: 0}
+			30%{opacity: 0}
+			40%{opacity: 100}
+			60%{opacity: 0}
+			100%{opacity: 0}
+		}
+		@keyframes f{
+			0%{opacity: 0}
+			50%{opacity: 0}
+			60%{opacity: 100}
+			80%{opacity: 0}
+			100%{opacity: 0}
+		}
+		@keyframes z{
+			0%{opacity: 0}
+			70%{opacity: 0}
+			80%{opacity: 100}
+			100%{opacity: 0}
+		}
+	</style>
+</head>
+
+<body>
+	<audio id="bgm" src="wav/beiai.wav" autoplay preload="auto" loop controls></audio>
+	<page id="c" onclick="controls()">春
+		<span id="w">万物复苏</span>
+	</page>
+	<page id="x" onclick="controls()">夏
+		<span id="b">冰凉夏日</span>
+	</page>
+	<page id="q" onclick="controls()">秋
+		<span id="f">枫红叶绿</span>
+	</page>
+	<page id="d" onclick="controls()">冬
+		<span id="z">贞下起元</span>
+	</page>
+</body>
+</html>
+<script>
+		var password = prompt("请输入密码，并确保周围木有人");
+		if(isNaN(password)){
+			alert("请输入一个数字");
+		}
+		else{
+			if(password == 123){
+				alert("密码正确");
+			}
+			else if(password == 456){
+				alert("权限不够，但能浏览网页");
+			}
+			else if(password == 789){
+				alert("权限不够，请出门左拐");
+			}
+			else{
+				alert("密码错误，并给了你一巴掌");
+			}
+		}
+	function controls(){
+		if(document.getElementById("bgm").paused){
+			document.getElementById("bgm").play();
+		   }
+		else{
+			document.getElementById("bgm").pause();
+		}
+	}
+//		var age = prompt("请输入年龄");
+//		if(isNaN(age)){
+//			alert("请输入一个数字");
+//		}
+//		else{
+//			if(age>=18){
+//				if(age>300){
+//					alert("妖怪");
+//				}
+//				else{
+//					alert("成年了");
+//				}
+//			}
+//			else{
+//				alert("还小呢");
+//			}
+//		}
+	</script>
