@@ -1,0 +1,45 @@
+@charset "utf-8";
+/* CSS Document */
+#box{
+			width: 800px;
+			height: 400px;
+			margin: 0 auto;
+			text-align: center;
+			border: 5px solid black;
+		}
+		#mine{
+			float: left;
+			width: 400px;
+			height: 400px;
+			background-color: rebeccapurple;
+		}
+		#computer{
+			float: right;
+			width: 400px;
+			height: 400px;
+			background-color: red;
+		}
+		#sanjia{
+			margin-left: 100px;
+			margin-top: 50px;
+			width: 200px;
+			height: 200px;
+			background: url(img/hand.gif);
+			background-size: 100%;
+		}
+		#siri{
+			margin-left: 100px;
+			margin-top: 50px;
+			width: 200px;
+			height: 200px;
+			background: url(img/hand2.gif);
+			background-size: 100%;
+		}
+		input{
+			font-size: 25px;
+		}
+		#result,#jifen{
+			font-size: 100px;
+			text-align: center;
+			color: orange;
+		}

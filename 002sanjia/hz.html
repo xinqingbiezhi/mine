@@ -1,0 +1,65 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>换装小游戏</title>
+	<style type="text/css">
+		body,html{
+			position: absolute;
+			margin: 0;
+			width: 100%;
+			height: 100%;
+		}
+		#menu{
+			
+		}
+		#jqr{
+			clear: both;
+			border: 1px solid black;
+			width: 500px;
+			height: 548px;
+			background: url(img/机器人.png);
+		}
+		#upper{
+			position: absolute;
+			width: 500px;
+			height: 548px;
+		}
+		#upper1{
+			position: absolute;
+			width: 500px;
+			height: 548px;
+		}
+		.hz{ 
+			float: left;
+			width: 165px;
+			border: 1px solid black;
+			font-size: 30px;
+			text-align: center;
+		}
+	</style>
+</head>
+
+<body>
+	<div id="menu">
+		<div class="hz" id="qz" onclick="magic()">裙子</div>
+		<div class="hz" id="xdk" onclick="magic1()">小短裤</div>
+		<div class="hz" id="tws" onclick="magic2()">条纹衫</div>
+		<div id="jqr">
+			<div id="upper"></div>
+			<div id="upper1"></div>
+		</div>
+	</div>
+</body>
+</html>
+<script>
+	function magic(){
+		document.getElementById("upper1").style.backgroundImage="url(img/裙子.png)";
+	}
+	function magic1(){
+		document.getElementById("upper1").style.backgroundImage="url(img/小短裤.png)";
+	}
+	function magic2(){
+		document.getElementById("upper").style.backgroundImage="url(img/条纹衫.png)";
+	}
+</script>
